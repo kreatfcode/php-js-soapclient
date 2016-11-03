@@ -10,7 +10,7 @@
     <script src="jquery.soap.js"></script>
     <script>
       $.soap({
-    url: 'https://esbbcext01.beacukai.go.id:9082/penerimaandatasvc/WSTPB',
+    url: 'https://esbbcext01.beacukai.go.id:9082/penerimaandatasvc/WSTPB/',
     method: 'getKurs',
 
     data: {
