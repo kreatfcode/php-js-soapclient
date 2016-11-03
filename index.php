@@ -13,7 +13,7 @@
     console.log( "ready!" );
         $("#status").text("Create Connection....");
         $.soap({
-    url: 'https://esbbcext01.beacukai.go.id:9082/penerimaandatasvc/WSTPB/',
+    url: 'http://10.242.230.204:8080/WSTPB/WSTPB/',
     method: 'getKurs',
 
     data: {
