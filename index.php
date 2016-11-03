@@ -29,7 +29,7 @@
     error: function (SOAPResponse) {
         // show error
       console.log('error');
-      console.log(soapResponse);
+      console.log(SOAPResponse);
     }
 });
     </script>
