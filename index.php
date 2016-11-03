@@ -4,12 +4,15 @@
   </head>
   <body>
     <div>
-      Cek Service Status : <span></span>
+      Cek Service Status : <span id="status"></span>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="jquery.soap.js"></script>
     <script>
-      $.soap({
+      $( document ).ready(function() {
+    console.log( "ready!" );
+        $("#status").text("Create Connection....");
+        $.soap({
     url: 'https://esbbcext01.beacukai.go.id:9082/penerimaandatasvc/WSTPB/',
     method: 'getKurs',
 
@@ -30,8 +33,11 @@
         // show error
       console.log('error');
       console.log(SOAPResponse);
+      $("#status").text("FAILED");
     }
 });
+});
+      
     </script>
   </body>
 </html>
